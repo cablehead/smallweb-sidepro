@@ -13,7 +13,8 @@ RUN chown smallweb:smallweb /home/smallweb
 WORKDIR /home/smallweb
 USER smallweb
 
-ENV SMALLWEB_DOMAIN=smallweb.ndyg.co    # change this to your domain
+# change this to your domain
+ENV SMALLWEB_DOMAIN=smallweb.ndyg.co
 ENV SMALLWEB_DIR=/home/smallweb/smallweb
 ENV SMALLWEB_HOST=0.0.0.0
 ENV SMALLWEB_PORT=8080
