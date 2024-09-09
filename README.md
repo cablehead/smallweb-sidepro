@@ -6,7 +6,6 @@
 To deploy:
 
 ```shell
-APPNAME=ndyg-smallweb
 DIGEST=sha256:9a39f2a5bdf2fac60943d1feeded9ed52527409dfe42490694f703847f0b8fb2
 
 sidepro push \
