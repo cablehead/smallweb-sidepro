@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Smallweb + SidePro</title>
+    <style>
+      :root {
+        --nord-primary: #81a1c1;
+        --nord-secondary: #3b4252;
+        --nord-success: #a3be8c;
+        --nord-info: #88c0d0;
+        --nord-warning: #ebcb8b;
+        --nord-danger: #bf616a;
+        --nord-light: #e5e9f0;
+        --nord-dark: #4c566a;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      body {
+        background-color: var(--nord-dark);
+        font-size: 1.25em;
+        font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
+          "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
+          "Courier New", monospace;
+        color: var(--nord-light);
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        max-width: 600px;
+        padding: 0 2em;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-y: auto;
+        margin: 0 auto;
+        flex-grow: 1;
+      }
+
+      a {
+        color: var(--nord-primary);
+        text-decoration: dotted;
+      }
+
+      a:hover {
+        background-color: var(--nord-secondary);
+      }
+
+      header {
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+        text-align: center;
+      }
+
+      footer {
+        margin-top: 10vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 0.25em;
+      }
+
+      footer object {
+        width: 2em;
+        height: 2.25em;
+        padding-bottom: 0.4em;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>
+          my
+          <a href="https://www.smallweb.run">smallweb</a>
+          👋
+        </h1>
+      </header>
+
+      <p>Available sites:</p>
+      <ul>
+        <li>
+          <a
+            href="javascript:void(0);"
+            onclick="this.href = window.location.protocol + '//' + 'example.' + window.location.hostname.split('.').slice(1).join('.');"
+            >example</a
+          >
+        </li>
+      </ul>
+      <footer>
+        <span>hosted by <a href="https://docs.sidepro.cloud">SidePro</a></span>
+        <span>💙</span>
+        <object type="image/svg+xml" data="toronto.svg"></object>
+      </footer>
+      <div>
+        <span><a href="https://github.com/cablehead/smallweb-sidepro">source</a></span>
+      </div>
+    </main>
+  </body>
+</html>
