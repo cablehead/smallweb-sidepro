@@ -18,6 +18,10 @@
         --nord-danger: #bf616a;
         --nord-light: #e5e9f0;
         --nord-dark: #4c566a;
+        --font-family-traditional: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+        --font-family-monospace: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+          "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono",
+          "Droid Sans Mono", "Courier New", monospace;
       }
 
       html,
@@ -26,21 +30,20 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
+				font-size: 1.05em;
+        line-height: 1.5em;
       }
 
       body {
-        background-color: var(--nord-dark);
-        font-size: 1.25em;
-        font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
-          "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
-          "Courier New", monospace;
-        color: var(--nord-light);
+        background-color: var(--nord-light);
+        font-family: var(--font-family-traditional);
+        color: var(--nord-dark);
         display: flex;
         flex-direction: column;
       }
 
       main {
-        max-width: 600px;
+        max-width: 800px;
         padding: 0 2em;
         width: 100%;
         box-sizing: border-box;
@@ -84,22 +87,24 @@
     <main>
       <header>
         <h1>
-          my
-          <a href="https://www.smallweb.run">smallweb</a>
+          welcome to your
+          <a href="https://www.smallweb.run">Smallweb</a>
           👋
         </h1>
       </header>
 
-      <p>Available sites:</p>
-      <ul>
-        <li>
-          <a
-            href="javascript:void(0);"
-            onclick="this.href = window.location.protocol + '//' + 'example.' + window.location.hostname.split('.').slice(1).join('.');"
-            >example</a
-          >
-        </li>
-      </ul>
+      <p>
+        Creating a site / app / domain with Smallweb is as simple as creating a directory. This
+        installation hosts two domains, www and example. You can view the source for both here.
+      </p>
+
+      <p>
+        Out of the box, you also get webdav. cli. apps, which you can use to manage your entire
+        Smallweb installation. To make use of these you'll need to generate a token, which you can
+        do using SidePro's exec feature. You only need to exec once, after that, you can use the
+        cli. endpoint to manage tokens, as well as most everything else.
+      </p>
+
       <footer>
         <span>hosted by <a href="https://docs.sidepro.cloud">SidePro</a></span>
         <span>💙</span>
