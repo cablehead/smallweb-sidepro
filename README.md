@@ -15,6 +15,7 @@ jo \
   SMALLWEB_DOMAIN=smallweb.ndyg.co \
   SMALLWEB_SIDEPRO_IMAGE_DIGEST=sha256:27e1d3a5f5c02fd1421b3fb52daae6a6ceb9b78d5d66109d196858a20cf63066 \
   SIDEPRO_NAMESPACE=andy-beta | minijinja-cli --autoescape=none -f json ./sidepro.yml - > manifest.yml
+
 sidepro push manifest.yml
 ```
 
