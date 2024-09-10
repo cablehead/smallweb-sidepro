@@ -4,7 +4,7 @@ RUN apt-get update \
     && apt-get install -y curl vim \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
-ARG SMALLWEB_VERSION=0.14.0-rc.1
+ARG SMALLWEB_VERSION=0.14.0-rc.2
 RUN curl -fsSL 'https://install.smallweb.run?v=${SMALLWEB_VERSION}&target_dir=/usr/local/bin' | sh
 
 # Create the smallweb user
