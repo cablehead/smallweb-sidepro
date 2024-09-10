@@ -19,5 +19,6 @@ jo \
 sidepro push manifest.yml
 ```
 
-For now you need to enumerate the routes for your apps manually, but you should
-be able to specify a wildcard route in the future.
+For now you need to enumerate the routes for your apps manually, so SidePro can
+generate a SSL cert for each one, but you should be able to specify a wildcard
+route in the future.
