@@ -11,6 +11,7 @@ configuration:
         - www.{{ SMALLWEB_DOMAIN }}
         - webdav.{{ SMALLWEB_DOMAIN }}
         - cli.{{ SMALLWEB_DOMAIN }}
+        - editor.{{ SMALLWEB_DOMAIN }}
         - example.{{ SMALLWEB_DOMAIN }}
     appchart: standard
     settings:
