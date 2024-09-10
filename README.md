@@ -6,11 +6,7 @@ https://github.com/pomdtr/smallweb-fly as a reference.
 
 ## To deploy
 
-Uses:
-
-- [jo](https://github.com/jpmens/jo)
-- [minijinja-cli](https://github.com/mitsuhiko/minijinja)
-
+Uses: [jo](https://github.com/jpmens/jo), [minijinja-cli](https://github.com/mitsuhiko/minijinja)
 
 ```shell
 # replace with your own values
