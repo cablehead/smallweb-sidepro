@@ -9,7 +9,7 @@ https://github.com/pomdtr/smallweb-fly as a reference.
 To use this you'll need to have a domain name you can manage. Point the DNS for
 the root domain you'd like to use to SidePro's servers using [these
 instructions](https://docs.sidepro.cloud/deploying-apps/?h=custom+domain#custom-domains-and-urls).
-You'll want to put a wildcard domain as well, so you can create arbitrary
+You'll want to point a wildcard subdomain as well, so you can create arbitrary
 subdomains.
 
 If you look at the

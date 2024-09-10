@@ -95,21 +95,6 @@
         margin-bottom: 10vh;
         text-align: center;
       }
-
-      footer {
-        margin-top: 2em;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.25em;
-      }
-
-      footer object {
-        width: 2em;
-        height: 2.25em;
-        padding-bottom: 0.4em;
-      }
     </style>
   </head>
   <body>
@@ -120,11 +105,27 @@
           <a href="https://www.smallweb.run">Smallweb</a>
           👋
         </h1>
-        <footer>
+        <div
+          style="
+            margin-top: 2em;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.25em;
+          "
+        >
           <span>hosted by <a href="https://docs.sidepro.cloud">SidePro</a></span>
           <span>💙</span>
-          <object type="image/svg+xml" data="toronto.svg"></object>
-        </footer>
+          <object
+            style="width: 2em; height: 2.25em; padding-bottom: 0.4em"
+            type="image/svg+xml"
+            data="toronto.svg"
+          ></object>
+        </div>
+        <div style="margin-top: 0.5em; font-size: 0.9em">
+          <a href="https://github.com/cablehead/smallweb-sidepro"> deployment instructions</a>
+        </div>
       </header>
 
       <div><div class="preview markdown"><p>Creating a site / app / domain with <a href="https://www.smallweb.run">Smallweb</a> is as simple as creating a directory. This installation hosts two domains: <a href="https://www.smallweb.ndyg.co"><code>www.</code></a> (this page) and <a href="https://example.smallweb.ndyg.co"><code>example.</code></a>. You can view the source for both <a href="https://github.com/cablehead/smallweb-sidepro/tree/main/smallweb">here</a>.</p>
