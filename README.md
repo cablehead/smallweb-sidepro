@@ -1,7 +1,7 @@
 # Smallweb on SidePro
 
 This is a template for deploying a [Smallweb](https://www.smallweb.run)
-app on [SidePro](https://docs.sidepro.cloud/). I used
+installation on [SidePro](https://docs.sidepro.cloud/). I used
 https://github.com/pomdtr/smallweb-fly as a reference.
 
 ## BYO domain name
