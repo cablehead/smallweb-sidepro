@@ -7,12 +7,14 @@ configuration:
       SMALLWEB_HOST: 0.0.0.0
       SMALLWEB_PORT: 8080
     routes:
-        - example.{{ SMALLWEB_DOMAIN }}
         - {{ SMALLWEB_DOMAIN }}
         - www.{{ SMALLWEB_DOMAIN }}
+        - webdav.{{ SMALLWEB_DOMAIN }}
+        - cli.{{ SMALLWEB_DOMAIN }}
+        - example.{{ SMALLWEB_DOMAIN }}
     appchart: standard
     settings:
         appListeningPort: "8080"
 origin:
-    container: {{ SMALLWEB_SIDEPRO_BASE_IMAGE }}
+    container: ghcr.io/cablehead/smallweb-sidepro@{{ SMALLWEB_SIDEPRO_IMAGE_DIGEST }}
 namespace: {{ SIDEPRO_NAMESPACE }}
