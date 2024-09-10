@@ -1,7 +1,8 @@
 # Smallweb on SidePro
 
-- [Smallweb](https://www.smallweb.run)
-- [SidePro](https://docs.sidepro.cloud/)
+This is a template for deploying a [Smallweb](https://www.smallweb.run)
+Smallweb app on [SidePro](https://docs.sidepro.cloud/). I used
+https://github.com/pomdtr/smallweb-fly as a reference.
 
 To deploy:
 

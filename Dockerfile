@@ -4,8 +4,8 @@ RUN apt-get update \
     && apt-get install -y curl vim \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
-# note: version is unpinned and will get the latest version
-RUN curl -fsSL 'https://install.smallweb.run?target_dir=/usr/local/bin' | sh
+ARG SMALLWEB_VERSION=0.14.0-rc.1
+RUN curl -fsSL 'https://install.smallweb.run?v=${SMALLWEB_VERSION}&target_dir=/usr/local/bin' | sh
 
 # Create the smallweb user
 RUN useradd -m -s /bin/bash smallweb
@@ -14,17 +14,7 @@ RUN useradd -m -s /bin/bash smallweb
 USER smallweb
 WORKDIR /home/smallweb
 
-# Change this to your smallweb repo
-RUN mkdir -p smallweb \
-    && curl -L https://github.com/cablehead/my-smallweb/archive/refs/heads/main.tar.gz \
-    | gunzip \
-    | tar -xC ./smallweb --strip-components=1
-
-# Change this to your domain
-ENV SMALLWEB_DOMAIN=smallweb.ndyg.co
-
-ENV SMALLWEB_DIR=/home/smallweb/smallweb
-ENV SMALLWEB_HOST=0.0.0.0
-ENV SMALLWEB_PORT=8080
+# Copy a base Smallweb setup
+COPY --chown=smallweb:smallweb smallweb smallweb
 
 ENTRYPOINT [ "/usr/local/bin/smallweb", "up" ]
