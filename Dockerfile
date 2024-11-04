@@ -1,7 +1,7 @@
 FROM denoland/deno:1.46.1
 
 RUN apt-get update \
-    && apt-get install -y curl vim \
+    && apt-get install -y curl vim sudo git \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 ARG SMALLWEB_VERSION=0.14.0-rc.2
